@@ -1,0 +1,6 @@
+framework module Pods_LHUIMaker {
+  umbrella header "Pods-LHUIMaker-umbrella.h"
+
+  export *
+  module * { export * }
+}
