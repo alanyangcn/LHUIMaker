@@ -16,6 +16,9 @@
 		A162B29A26704CC7003F92FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A162B29826704CC7003F92FC /* LaunchScreen.storyboard */; };
 		A162B2A326704D3F003F92FC /* LHUIMakerWarpper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162B2A226704D3F003F92FC /* LHUIMakerWarpper.swift */; };
 		A162B2A5267059AC003F92FC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162B2A4267059AC003F92FC /* UIViewExtension.swift */; };
+		A19427BC26719EFD00FF194D /* UIStackExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19427BB26719EFD00FF194D /* UIStackExtension.swift */; };
+		A19427BE2671B64C00FF194D /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19427BD2671B64C00FF194D /* UIScrollViewExtension.swift */; };
+		A19427C02671F79900FF194D /* UISwitchExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19427BF2671F79900FF194D /* UISwitchExtension.swift */; };
 		A1EF8D4B2670B99F0062BD25 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF8D4A2670B99F0062BD25 /* UILabelExtension.swift */; };
 		A1EF8D4D2670BB9B0062BD25 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF8D4C2670BB9B0062BD25 /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +36,9 @@
 		A162B29B26704CC7003F92FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A162B2A226704D3F003F92FC /* LHUIMakerWarpper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LHUIMakerWarpper.swift; sourceTree = "<group>"; };
 		A162B2A4267059AC003F92FC /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A19427BB26719EFD00FF194D /* UIStackExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackExtension.swift; sourceTree = "<group>"; };
+		A19427BD2671B64C00FF194D /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		A19427BF2671F79900FF194D /* UISwitchExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitchExtension.swift; sourceTree = "<group>"; };
 		A1EF8D4A2670B99F0062BD25 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		A1EF8D4C2670BB9B0062BD25 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		A8431AA0F59C4B797CF97DEC /* Pods-LHUIMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHUIMaker.release.xcconfig"; path = "Target Support Files/Pods-LHUIMaker/Pods-LHUIMaker.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 				A162B2A4267059AC003F92FC /* UIViewExtension.swift */,
 				A1EF8D4A2670B99F0062BD25 /* UILabelExtension.swift */,
 				A1EF8D4C2670BB9B0062BD25 /* UIButtonExtension.swift */,
+				A19427BB26719EFD00FF194D /* UIStackExtension.swift */,
+				A19427BD2671B64C00FF194D /* UIScrollViewExtension.swift */,
+				A19427BF2671F79900FF194D /* UISwitchExtension.swift */,
 			);
 			path = LHUIMaker;
 			sourceTree = "<group>";
@@ -122,7 +131,7 @@
 				A162B28626704CC5003F92FC /* Sources */,
 				A162B28726704CC5003F92FC /* Frameworks */,
 				A162B28826704CC5003F92FC /* Resources */,
-				015AA31B28DDE10C6DE21243 /* [CP] Embed Pods Frameworks */,
+				D65413FC446312A3BC9F4657 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,7 +188,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		015AA31B28DDE10C6DE21243 /* [CP] Embed Pods Frameworks */ = {
+		D65413FC446312A3BC9F4657 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -226,7 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A162B2A5267059AC003F92FC /* UIViewExtension.swift in Sources */,
+				A19427C02671F79900FF194D /* UISwitchExtension.swift in Sources */,
 				A162B29226704CC5003F92FC /* ViewController.swift in Sources */,
+				A19427BE2671B64C00FF194D /* UIScrollViewExtension.swift in Sources */,
+				A19427BC26719EFD00FF194D /* UIStackExtension.swift in Sources */,
 				A162B2A326704D3F003F92FC /* LHUIMakerWarpper.swift in Sources */,
 				A162B28E26704CC5003F92FC /* AppDelegate.swift in Sources */,
 				A1EF8D4D2670BB9B0062BD25 /* UIButtonExtension.swift in Sources */,

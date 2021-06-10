@@ -7,36 +7,60 @@
 
 import SnapKit
 import UIKit
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let stackView = UIStackView()
-        stackView.axis = .vertical
-        stackView.spacing = 10
-        stackView.lh.superView(view)
-
-        stackView.snp.makeConstraints { make in
-            make.center.equalToSuperview()
-        }
-
         let label = UILabel().lh
-            .text("杏坛教育")
+            .text("LH_UIMaker")
             .backgroundColor(.red)
             .textAlignment(.center)
             .textColor(.white)
-            .font(UIFont.systemFont(ofSize: 32))
+            .font(UIFont.systemFont(ofSize: 28))
             .lineBreakMode(.byTruncatingMiddle)
             .base
 
         let button = UIButton().lh
             .backgroundColor(.systemBlue)
-            .title("按钮").base
+            .title("按钮")
+            .base
+
+        let stackView = UIStackView().lh
+            .axis(.vertical)
+            .spacing(10)
+            .superView(view)
+            .arrangedSubviews([label, button])
+            .base
+
+        stackView.snp.makeConstraints { make in
+            make.top.centerX.equalTo(view.safeAreaLayoutGuide)
+        }
+        
+        let scrollView = UIScrollView().lh
+            .delegate(self)
+            .backgroundColor(.systemGray6)
+            .superView(view)
+            .base
+        
+        let switchButton = UISwitch().lh
+            .tintColor(.systemPink)
+            .superView(scrollView)
+            .base
+        switchButton.onTintColor = .gray
+        switchButton.thumbTintColor = .red
+        scrollView.snp.makeConstraints { make in
+            make.top.equalTo(stackView.snp.bottom).offset(20)
+            make.left.equalToSuperview().offset(20)
+            make.right.equalToSuperview().offset(-20)
+            make.height.equalTo(300)
+        }
+        
+        switchButton.snp.makeConstraints { make in
+            make.left.top.equalToSuperview().offset(60)
+            make.bottom.right.equalToSuperview().offset(-300)
+        }
 
         button.addTarget(self, action: #selector(buttonClick(button:)), for: .touchUpInside)
-
-        stackView.addArrangedSubview(label)
-        stackView.addArrangedSubview(button)
     }
 
     @objc private func buttonClick(button: UIButton) {
