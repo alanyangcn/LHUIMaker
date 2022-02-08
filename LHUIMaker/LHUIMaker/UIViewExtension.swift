@@ -13,6 +13,7 @@ extension UIResponder: LHUIMakable {}
 extension LHUIMakerWarpper where Base: UIView {
     @discardableResult
     func frame(_ frame: CGRect) -> LHUIMakerWarpper {
+        
         base.frame = frame
         return self
     }
@@ -98,12 +99,44 @@ extension LHUIMakerWarpper where Base: UIView {
 
         return self
     }
+    
+    func cornerRadius(_ cornerRadius: CGFloat) -> LHUIMakerWarpper {
+        base.layer.cornerRadius = cornerRadius
+        return self
+    }
 }
 
 extension LHUIMakerWarpper where Base: UIView {
     @discardableResult
     func superView(_ superView: UIView) -> LHUIMakerWarpper {
         superView.addSubview(base)
+        return self
+    }
+}
+
+extension LHUIMakerWarpper where Base: UIView {
+    @discardableResult
+    func padding(_ padding: CGFloat = 16) -> LHUIMakerWarpper {
+        let view = UIView()
+        
+        view.addSubview(base)
+        
+        base.snp.makeConstraints { make in
+            make.left.top.equalToSuperview().offset(padding)
+            make.right.bottom.equalToSuperview().offset(-padding)
+        }
+        
+        
+        return self
+    }
+}
+
+extension LHUIMakerWarpper where Base: UIView {
+    @discardableResult
+    func bind( _ binding: inout Base?) -> LHUIMakerWarpper {
+       
+        binding = base
+        
         return self
     }
 }

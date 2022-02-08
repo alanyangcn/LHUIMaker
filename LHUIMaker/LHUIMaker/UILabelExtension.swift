@@ -21,6 +21,15 @@ extension LHUIMakerWarpper where Base: UILabel {
     }
 
     @discardableResult
+    func fontSize(_ fontSize: CGFloat) -> LHUIMakerWarpper {
+        
+        
+        let font = UIFont.systemFont(ofSize: fontSize)
+        base.font = font
+        return self
+    }
+    
+    @discardableResult
     func font(_ font: UIFont) -> LHUIMakerWarpper {
         base.font = font
         return self

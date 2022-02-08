@@ -14,12 +14,18 @@ public struct LHUIMakerWarpper<Base> {
     }
 }
 
-public protocol LHUIMakable {}
+public protocol LHUIMakable: UIResponder {}
 
 extension LHUIMakable {
-    public var lh: LHUIMakerWarpper<Self> {
+    public var lh_ui: LHUIMakerWarpper<Self> {
         get { return LHUIMakerWarpper(self) }
         set {}
     }
-}
 
+    public static var lh_ui: LHUIMakerWarpper<Self> {
+        get {
+            return LHUIMakerWarpper(Self())
+        }
+        set {}
+    }
+}

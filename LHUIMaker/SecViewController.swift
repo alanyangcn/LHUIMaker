@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  SecViewController.swift
 //  LHUIMaker
 //
-//  Created by 杨立鹏 on 2021/6/9.
+//  Created by 杨立鹏 on 2021/11/30.
 //
 
 import SnapKit
 import UIKit
-class ViewController: UIViewController, UIScrollViewDelegate {
+class SecViewController: UIViewController, UIScrollViewDelegate {
     private var label = UILabel()
     private var button = UIButton()
     private var button2 = UIButton()
@@ -19,12 +19,18 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     private var bottomButton: UIButton?
     
+    private var pkq: UIButton = {
+        
+        UIButton.lh_ui.backgroundColor(.red)
+            .title("哈哈哈哈")
+            .base
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "hh "
-        view.backgroundColor = .white
-        
+        view.backgroundColor = .gray
         label = UILabel().lh_ui
             .text("LH_UIMaker")
             .backgroundColor(.red)
@@ -135,6 +141,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             .title("button")
             .cornerRadius(15)
             .bind(&bottomButton)
+            .titleColor(.black)
             .image(UIImage(systemName: "sun.min"))
             .base
 
@@ -149,14 +156,22 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         
         bottomButton?.addTarget(self, action: #selector(buttonClick(button:)), for: .touchUpInside)
+        
+        
+        pkq.lh_ui.superView(view)
+        
+//        view.addSubview(pkq)
+        
+        pkq.snp.makeConstraints { make in
+            make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-200)
+            make.centerX.equalTo(view.safeAreaLayoutGuide)
+            make.width.equalTo(80)
+            make.height.equalTo(40)
+        }
     }
 
     @objc private func buttonClick(button: UIButton) {
         print("button click")
-        
-        let vc = SecViewController()
-        
-        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     @objc private func colorwellChanged(colorwell: UIColorWell) {
@@ -165,6 +180,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     deinit {
-        debugPrint("$$$$$")
+        debugPrint("释放了")
     }
 }

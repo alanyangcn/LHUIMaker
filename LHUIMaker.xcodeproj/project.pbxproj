@@ -16,9 +16,13 @@
 		A162B29A26704CC7003F92FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A162B29826704CC7003F92FC /* LaunchScreen.storyboard */; };
 		A162B2A326704D3F003F92FC /* LHUIMakerWarpper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162B2A226704D3F003F92FC /* LHUIMakerWarpper.swift */; };
 		A162B2A5267059AC003F92FC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162B2A4267059AC003F92FC /* UIViewExtension.swift */; };
+		A163F1EC267AF43500DCCF63 /* UIDatePickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163F1EB267AF43500DCCF63 /* UIDatePickerExtension.swift */; };
+		A193829A2672F57C00767EDB /* UIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19382992672F57C00767EDB /* UIControlExtension.swift */; };
+		A193829D2672F72400767EDB /* UIColorWellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A193829C2672F72400767EDB /* UIColorWellExtension.swift */; };
 		A19427BC26719EFD00FF194D /* UIStackExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19427BB26719EFD00FF194D /* UIStackExtension.swift */; };
 		A19427BE2671B64C00FF194D /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19427BD2671B64C00FF194D /* UIScrollViewExtension.swift */; };
 		A19427C02671F79900FF194D /* UISwitchExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19427BF2671F79900FF194D /* UISwitchExtension.swift */; };
+		A1B5220F275621500003F97E /* SecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5220E275621500003F97E /* SecViewController.swift */; };
 		A1EF8D4B2670B99F0062BD25 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF8D4A2670B99F0062BD25 /* UILabelExtension.swift */; };
 		A1EF8D4D2670BB9B0062BD25 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF8D4C2670BB9B0062BD25 /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
@@ -36,9 +40,14 @@
 		A162B29B26704CC7003F92FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A162B2A226704D3F003F92FC /* LHUIMakerWarpper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LHUIMakerWarpper.swift; sourceTree = "<group>"; };
 		A162B2A4267059AC003F92FC /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A163F1EB267AF43500DCCF63 /* UIDatePickerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePickerExtension.swift; sourceTree = "<group>"; };
+		A16444EA268433490010D2FE /* LHUIMaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LHUIMaker.entitlements; sourceTree = "<group>"; };
+		A19382992672F57C00767EDB /* UIControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlExtension.swift; sourceTree = "<group>"; };
+		A193829C2672F72400767EDB /* UIColorWellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorWellExtension.swift; sourceTree = "<group>"; };
 		A19427BB26719EFD00FF194D /* UIStackExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackExtension.swift; sourceTree = "<group>"; };
 		A19427BD2671B64C00FF194D /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		A19427BF2671F79900FF194D /* UISwitchExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitchExtension.swift; sourceTree = "<group>"; };
+		A1B5220E275621500003F97E /* SecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecViewController.swift; sourceTree = "<group>"; };
 		A1EF8D4A2670B99F0062BD25 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		A1EF8D4C2670BB9B0062BD25 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		A8431AA0F59C4B797CF97DEC /* Pods-LHUIMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHUIMaker.release.xcconfig"; path = "Target Support Files/Pods-LHUIMaker/Pods-LHUIMaker.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,9 +95,11 @@
 		A162B28C26704CC5003F92FC /* LHUIMaker */ = {
 			isa = PBXGroup;
 			children = (
+				A16444EA268433490010D2FE /* LHUIMaker.entitlements */,
 				A162B28D26704CC5003F92FC /* AppDelegate.swift */,
 				A162B28F26704CC5003F92FC /* SceneDelegate.swift */,
 				A162B29126704CC5003F92FC /* ViewController.swift */,
+				A1B5220E275621500003F97E /* SecViewController.swift */,
 				A162B2A126704CD3003F92FC /* LHUIMaker */,
 				A162B29326704CC5003F92FC /* Main.storyboard */,
 				A162B29626704CC7003F92FC /* Assets.xcassets */,
@@ -104,12 +115,23 @@
 				A162B2A226704D3F003F92FC /* LHUIMakerWarpper.swift */,
 				A162B2A4267059AC003F92FC /* UIViewExtension.swift */,
 				A1EF8D4A2670B99F0062BD25 /* UILabelExtension.swift */,
-				A1EF8D4C2670BB9B0062BD25 /* UIButtonExtension.swift */,
 				A19427BB26719EFD00FF194D /* UIStackExtension.swift */,
 				A19427BD2671B64C00FF194D /* UIScrollViewExtension.swift */,
-				A19427BF2671F79900FF194D /* UISwitchExtension.swift */,
+				A193829B2672F58000767EDB /* Control */,
 			);
 			path = LHUIMaker;
+			sourceTree = "<group>";
+		};
+		A193829B2672F58000767EDB /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				A19382992672F57C00767EDB /* UIControlExtension.swift */,
+				A1EF8D4C2670BB9B0062BD25 /* UIButtonExtension.swift */,
+				A19427BF2671F79900FF194D /* UISwitchExtension.swift */,
+				A193829C2672F72400767EDB /* UIColorWellExtension.swift */,
+				A163F1EB267AF43500DCCF63 /* UIDatePickerExtension.swift */,
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 		FE5A30652F14D7C784682CDA /* Frameworks */ = {
@@ -236,9 +258,13 @@
 			files = (
 				A162B2A5267059AC003F92FC /* UIViewExtension.swift in Sources */,
 				A19427C02671F79900FF194D /* UISwitchExtension.swift in Sources */,
+				A1B5220F275621500003F97E /* SecViewController.swift in Sources */,
 				A162B29226704CC5003F92FC /* ViewController.swift in Sources */,
+				A193829D2672F72400767EDB /* UIColorWellExtension.swift in Sources */,
 				A19427BE2671B64C00FF194D /* UIScrollViewExtension.swift in Sources */,
 				A19427BC26719EFD00FF194D /* UIStackExtension.swift in Sources */,
+				A163F1EC267AF43500DCCF63 /* UIDatePickerExtension.swift in Sources */,
+				A193829A2672F57C00767EDB /* UIControlExtension.swift in Sources */,
 				A162B2A326704D3F003F92FC /* LHUIMakerWarpper.swift in Sources */,
 				A162B28E26704CC5003F92FC /* AppDelegate.swift in Sources */,
 				A1EF8D4D2670BB9B0062BD25 /* UIButtonExtension.swift in Sources */,
@@ -391,8 +417,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LHUIMaker/LHUIMaker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4T86ZQQNC4;
+				DEVELOPMENT_TEAM = F39JHVU4RX;
 				INFOPLIST_FILE = LHUIMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -400,6 +428,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alanyangcn.LHUIMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -411,8 +440,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LHUIMaker/LHUIMaker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4T86ZQQNC4;
+				DEVELOPMENT_TEAM = F39JHVU4RX;
 				INFOPLIST_FILE = LHUIMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -420,6 +451,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alanyangcn.LHUIMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
